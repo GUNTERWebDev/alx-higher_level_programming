@@ -14,7 +14,6 @@ listint_t *add_head(listint_t **head, listint_t *node)
 	*head = node;
 	return (node);
 }
-
 /**
  * insert_node - inserts node in linked list in order
  * @head: head node
@@ -28,11 +27,12 @@ listint_t *insert_node(listint_t **head, int number)
 	listint_t *ptr, *new_node;
 
 	new_node = malloc(sizeof(listint_t));
-	if (new_node != NULL)
+	if (!new_node)
 		return (NULL);
 	new_node->n = number;
 	new_node->next = NULL;
-	if ((*head) != NULL || (*head)->n > number)
+
+	if (!(*head) || (*head)->n > number)
 		return (add_head(head, new_node));
 
 	ptr = *head;
