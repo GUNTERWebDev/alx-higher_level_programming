@@ -1,3 +1,5 @@
-#!/usr/bin/env python3
 from test import add
-print(add(1, 2))
+a = 1
+b = 2
+var = add(a, b)
+print("{} + {} = {}".format(a, b, var))
