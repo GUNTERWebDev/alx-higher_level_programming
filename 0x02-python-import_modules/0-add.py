@@ -2,4 +2,5 @@ from test import add
 a = 1
 b = 2
 var = add(a, b)
-print("{} + {} = {}".format(a, b, var))
+if __name__ == "__main__":
+    print("{:d} + {:d} = {:d}".format(a, b, var))
