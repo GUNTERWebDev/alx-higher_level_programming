@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-import test
-if __name__ == "__main__":
-    print(test.a)
+from test import a
+if __name__ == "__main_":
+    print(a)
