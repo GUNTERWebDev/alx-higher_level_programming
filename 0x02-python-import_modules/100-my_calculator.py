@@ -9,7 +9,7 @@ if __name__ == "__main__":
         exit(1)
     num_1 = int(args[1])
     num_3 = int(args[3])
-    op = args[2] 
+    op = args[2]
     if ln == 3:
         if op != '+' and op != '-' and op != '/' and op != '*':
             print("Unknown operator. Available operators: +, -, * and /")
