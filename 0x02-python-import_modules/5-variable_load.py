@@ -1,3 +1,4 @@
 #!/usr/bin/python3
 import test
-print(test.a)
+if __name__ == "__main__":
+    print(test.a)
