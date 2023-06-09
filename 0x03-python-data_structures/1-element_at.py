@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-from 1-main import *
-
-
 def element_at(my_list, idx):
     count = 0
     for i in my_list:
