@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-from 4-main import *
-
-
 def new_in_list(my_list, idx, element):
     new_list = [element for element in my_list]
     count = 0
