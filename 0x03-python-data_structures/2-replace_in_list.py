@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-from 2-main import *
-
-
 def replace_in_list(my_list, idx, element):
     count = 0
     for i in my_list:
