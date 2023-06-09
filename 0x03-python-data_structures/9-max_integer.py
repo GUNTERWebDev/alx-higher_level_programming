@@ -1,7 +1,4 @@
 #!/usr/bin/python3
-from 9-main import *
-
-
 def max_integer(my_list=[]):
     j = 0
     if len(my_list) != 0:
