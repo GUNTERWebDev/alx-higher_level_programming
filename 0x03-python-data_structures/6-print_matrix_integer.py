@@ -3,5 +3,8 @@
 def print_matrix_integer(matrix=[[]]):
     for i in matrix:
         for j in i:
-            print("{}".format(j), end=" ")
+            if len(i) % 3 == 0:
+                print("{}".format(j), end="")
+            else:
+                print("{}".format(j), end=" ")
         print()
