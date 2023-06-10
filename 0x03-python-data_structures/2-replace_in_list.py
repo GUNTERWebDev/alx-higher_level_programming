@@ -8,5 +8,5 @@ def replace_in_list(my_list, idx, element):
             else:
                 my_list[idx] = element
         count += 1
-    if count > idx:
+    if count < idx:
         return (my_list)
