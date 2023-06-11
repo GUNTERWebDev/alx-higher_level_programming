@@ -14,4 +14,3 @@ It takes part of the second sprint of the [ALX SE Program](https://www.alxafrica
 - [0x06-python-classes](https://github.com/saad-out/alx-higher_level_programming/tree/main/0x06-python-classes)
 - [0x07-python-test_driven_development](https://github.com/saad-out/alx-higher_level_programming/tree/main/0x07-python-test_driven_development)
 - **More coming...**
-## Credits
