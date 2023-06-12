@@ -1,5 +1,3 @@
-<img src="https://cdn.programadoresbrasil.com.br/wp-content/uploads/2021/04/rxezjyf4ojx41-1140x694.png" width=450 height=250>
-
 # Alx-higher_level_programming
 ## About this repository
 This repository is a workspace for the tasks and projects related to high level programming languages, mainly **Python**.
