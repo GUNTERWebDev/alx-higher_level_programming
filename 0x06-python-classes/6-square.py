@@ -4,9 +4,10 @@
 
 class Square:
     """representing a square"""
+
     def __init__(self, size=0, position=(0, 0)):
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -26,27 +27,32 @@ class Square:
         return self.__position
 
     @position.setter
-    def position(self, val):
-        if type(val) != tuple or len(val) != 2:
+    def position(self, v):
+        if (type(v) != tuple) or (len(v) != 2):
             raise TypeError("position must be a tuple of 2 positive integers")
-        elif type(val[0]) < 0 or type(val[1]) < 0 or val[0] != int or val[1] != int:
+        elif type(v[0]) != int or type(v[1]) != int or v[0] < 0 or v[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
-            self.__position = val
+            self.__position = v
 
     def area(self):
-        return self.__size * self.__size
+        """return the square area"""
+
+        return (self.__size)**2
 
     def my_print(self):
+        """" print square using '#' """
+
         if self.__size == 0:
             print("")
-        else:
-            for i in range(0, self.__position[1]):
-                print("")
+            return
 
-            for j in range(0, self.__size):
-                for sp in range(0, self.__position[0]):
-                    print(" ", end="")
-                for i in range(0, self.__size):
-                    print("#", end="")
-                print("")
+        for i in range(0, self.__position[1]):
+            print("")
+
+        for j in range(0, self.__size):
+            for sp in range(0, self.__position[0]):
+                print(" ", end="")
+            for i in range(0, self.__size):
+                print("#", end="")
+            print("")
