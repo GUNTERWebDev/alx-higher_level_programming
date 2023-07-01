@@ -4,25 +4,28 @@
 import unittest
 max_integer = __import__('6-max_integer').max_integer
 
+
 class TestMaxInteger(unittest.TestCase):
     """Define unittests for max_integer([..])."""
     def ordred(self):
         """test ordred list"""
         ordred = [1, 2, 3, 4]
         self.assertAlmostEqual(max_integer(ordred), 4)
+
     def unordred(self):
         unordred = [1, 2, 5, 3]
         self.assertAlmostEqual(max_integer(unordred), 5)
-    
+
         """test listwith one element"""
     def unordred(self):
         one = [9]
         self.assertAlmostEqual(max_integer(one), 9)
-    
+
     def test_empty_list(self):
         """Test an empty list."""
         empty = []
         self.assertEqual(max_integer(empty), None)
+
     def test_floats(self):
         """Test a list of floats."""
         floats = [2.55, 8.33, -9.13, 30.2, 8.0]
@@ -46,6 +49,7 @@ class TestMaxInteger(unittest.TestCase):
     def test_empty_string(self):
         """Test an empty string."""
         self.assertEqual(max_integer(""), None)
+
 
 if __name__ == '__main__':
     unittest.main()
