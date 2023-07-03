@@ -56,8 +56,8 @@ class Rectangle:
         while i < self.__height:
             j = 0
             while j < self.__width:
-                str += '#'
+                str += "#"
                 j += 1
-            str += '\n'
+            str += "\n"
             i += 1
         return str
