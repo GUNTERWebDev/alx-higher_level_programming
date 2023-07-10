@@ -27,4 +27,3 @@ Use it:
 	>>> bg.integer_validator("null", 0)
 	Traceback (most recent call last):
 	ValueError: null must be greater than 0
-
