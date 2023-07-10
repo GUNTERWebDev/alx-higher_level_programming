@@ -6,14 +6,12 @@ Functions and Classes:
 """
 
 
-class BaseGeometry:
-    """
-    BaseGeometry
-    """
+class BaseGeometry():
+    """Geometry class"""
     def area(self):
-        """raises an exception"""
+        """raise an Exception"""
         raise Exception("area() is not implemented")
-        """raises an valueerror and type error"""
+
     def integer_validator(self, name, value):
         """validate that value is an integer"""
         if type(value) not in [int, float]:
