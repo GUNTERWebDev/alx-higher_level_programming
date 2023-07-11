@@ -1,5 +1,12 @@
 #!/usr/bin/python3
+"""
+This is '0-read_file' module.
+Functions and Classes:
+    read_file(filename="")
+"""
+
+
 def read_file(filename=""):
-    with open('my_file_0.txt', 'r') as F:
-        for line in F:
-            print(line)
+    """read content of a file and print it to stdout"""
+    with open(filename, 'r', encoding="UTF-8") as F:
+        print(F.read(), end="")
